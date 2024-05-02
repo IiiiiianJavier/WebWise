@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS PAGE</title>
+    <link rel="stylesheet" href="csspage.css" />
+  </head>
+
+  <div class="header">
+    <nav class="navbar">
+      <h2 class="logo"><a href="index.html">WebWise</a><img src= "logo.png"></h2>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" id="hamburger-btn">
+        <svg xmlns height="24" viewBox="0 0 24 24" width="24">
+          <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </label>
+      
+      <ul class="links">
+        <li><a href="aboutus2.html">ABOUT US</a></li>
+        <li><a href="htmlpage.html">HTML</a></li>
+        <li><a href="csspage.html">CSS</a></li>
+        <li><a href="javapage.html">JAVA SCRIPT</a></li>
+      </ul> 
+      
+      <div class="buttons">
+        <a href="login.html" class="login">LOGIN</a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="sidenav">
+    <a href="#intro">CSS Introduction</a>
+    <a href="#tuto">CSS Tutorials</a>
+    <a href="#exer">CSS Basic Exercise</a>
+    
+  </div>
+
+  <div class="body">
+  <div class="cssintro" id="intro">
+    <span class="introtxt">
+      <h2>CSS Introduction</h2>
+  <p>CSS (Cascading Style Sheets) is a simply designed language intended to simplify the process of making web pages <br>
+    presentable. CSS allows you to apply styles to HTML documents. It describes how a webpage should look. <br>
+    It prescribes colors, fonts, spacing, etc. In short, you can make your website look however you want. <br>
+    CSS lets developers and designers define how it behaves, including how elements are positioned in the<br>
+     browser. HTML uses tags and CSS uses rulesets. CSS styles are applied to the HTML element using selectors.<br>
+     CSS is easy to learn and understand, but it provides powerful control over the presentation of an HTML document.</p>
+     <h3>Why CSS?</h3>
+     <strong>CSS Saves Time</strong>- You can write CSS once and reuse the same sheet in multiple HTML pages. <br>
+      <strong>Search Engines</strong>- CSS is considered a clean coding technique, which means search engines won’t have to struggle to “read” its content. <br>
+      <strong>Superior styles to HTML</strong>- CSS has a much wider array of attributes than HTML, so you can give a far better look to your HTML page in comparison to HTML attributes.<br>
+      <strong>Offline Browsing</strong>- CSS can store web applications locally with the help of an offline cache. Using this we can view offline websites.
+    </span>
+    
+    <span class="introtxt2">
+    <h2>What is CSS?</h2>
+    <p>•CSS stands for Cascading Style Sheets<br>
+      •CSS describes how HTML elements are to be displayed on screen, paper, or in other media<br>
+      •CSS saves a lot of work. It can control the layout of multiple web pages all at once<br>
+      •External stylesheets are stored in CSS files<br>
+      </p>
+    </span>
+    <span class="introtxt3">
+    <h2>CSS Version Release Year</h2>
+    <img alt="CSS-Released-year" height="350"  src="CSS-Released-year.png" width="800">
+    <p> CSS was created HÃ¥kon Wium Lie to allow web designers to change the layout, colors, and fonts of their <br>
+      websites. Originally, websites were meant to be used by researchers only, so the decoration did not matter.<br>
+      However, when websites became widespread, the need to make them look nice grew.</p>
+      
+      <h2>History of CSS</h2>
+      <p>"Like HTML, CSS is standardized by the W3 consortium. CSS is an open, independent and freely usable standard. <br>
+        As with HTML, a working group exists for CSS who concerns itself with development of the standard.<br>
+         This is being done in accordance with W3C rules. CSS comes in different versions. CSS level 1 was released <br>
+         in 1996, and republished with corections in 1999. CSS level 2 appeared in 1998 and built on CSS level 1. <br>
+         CSS level 2 adds support for different output media. CSS 3 is currently in development and will be split up <br>
+         in modules. The idea behind it was to seperate presentation and content of a web site. The advantage of this <br>
+         approach is that updates and changes to the presentation need only be applied once (to the stylesheet) <br>
+         to affect all pages. Especially large sites can achieve significant time savings. In order to enforce this <br>
+         separation of concerns, the W3C has deprecated the "font" tag in HTML 4. Newer (X)HTML versions will deprecate<br>
+         other tags in a similar vein. CSS stylesheets are an immediate addition to HTML. CSS is a language to define <br>
+         format properties of HTML or XML tags. HTML has reached the end of it's shelf life and is not being developed <br>
+         further. XHTML is the new standard instead. XHTML reformulates HTML with XML syntax while at the same time <br>
+         getting rid of presentational markup. XHTML only contains content, presentation is the domain of a CSS stylesheet.<br>
+         This allows for different stylesheets for different output formats such as print, aural or small devices. <br>
+         Search machines on the other hand have an easier job if they are only presented with content markup."</p>
+      
+     <h2>CSS Variations</h2>
+     <p>"CSS has various levels and profiles. Each level of CSS builds upon the last, typically adding new features <br>
+      and typically denoted as CSS 1, CSS 2, and CSS 3. Profiles are typically a subset of one or more levels of <br>
+      CSS built for a particular device or user interface. Currently there are profiles for mobile devices, printers, <br>
+      and television sets. Profiles should not be confused with media types, which were added in CSS 2.</p>
+
+      <h2>CSS 1</h2>
+    <p>The first CSS specification to become an official W3C Recommendation is CSS level 1, published in December 1996. <br>
+      Among its capabilities are support for</p>
+      <p>•Font properties such as typeface and emphasis<br>
+        •Color of text, backgrounds, and other elements<br>
+        •Text attributes such as spacing between words, letters, and lines of text<br>
+        •Alignment of text, images, tables and other elements<br>
+        •Margin, border, padding, and positioning for most elements<br>
+        •Unique identification and generic classification of groups of attributes<br>
+        </p>
+     
+        <h2>CSS 2</h2>
+        <p>CSS level 2 specification was developed by the W3C and published as a Recommendation in May 1998.<br>
+           A superset of CSS 1, CSS 2 includes a number of new capabilities like absolute, relative, and fixed <br>
+            positioning of elements and z-index, the concept of media types, support for aural style sheets and <br>
+            bidirectional text, and new font properties such as shadows. The W3C no longer maintains the CSS 2 <br>
+            recommendation.</p>
+        
+        <p>CSS level 2 revision 1 or CSS 2.1 fixes errors in CSS 2, removes poorly-supported or not fully interoperable<br>
+          features and adds already-implemented browser extensions to the specification. In order to comply with the W3C<br>
+           Process for standardizing technical specifications, CSS 2.1 went back and forth between Working Draft status <br>
+           and Candidate Recommendation status for many years. CSS 2.1 first became a Candidate Recommendation on <br>
+           February 25, 2004, but it was reverted to a Working Draft on June 13, 2005 for further review. It was returned<br>
+            to Candidate Recommendation status on 19 July 2007 and was updated twice in 2009. However, since changes and <br>
+            clarifications were made to the prose it went back to Last Call Working Draft on 7 December 2010. Later it went<br>
+             into Proposed Recommendation on 12 April 2011. It was published as a Recommendation on 7 June 2011.</p>
+
+        <h2>CSS 3</h2>
+        <p>Instead of defining all features in a single, large specification like CSS 2, CSS 3 is divided into several<br>
+           separate documents called "modules". Each module adds new capability or extends features defined in CSS 2,<br>
+            over preserving backward compatibility. Work on CSS level 3 started around the time of publication of the <br>
+            original CSS 2 recommendation. The earliest CSS 3 drafts were published in June 1999.</p>
+
+            <p>Due to the modularization, different modules have different stability and are in different status. <br>
+              As of March 2011, there are over 40 CSS modules published from the CSS Working Group. Some modules <br>
+              such as Selectors, Namespaces, Color and Media Queries are considered stable and are either in Candidate<br>
+               Recommendation or Proposed Recommendation status. Once CSS 2.1 is finalized and published<br> 
+               as Recommendation, they are likely to go to Recommendation as well.</p>
+    
+  </p>
+    </span>
+  </div>
+  
+
+  <div class="csstuto" id="tuto">
+    <h1>CSS Tutorials</h1>
+    <video style="width: 900px;"controls>
+      <source src="CSS in 100 Seconds.mp4" type="video/mp4">
+  </video>
+  <span class="tutoxt">
+    <p>	<strong>Video Source:</strong> https://youtu.be/OEV8gMkCHXQ?si=rcD_qHdBBjLilb8W <br>
+      <br>
+    <strong>DESCRIPTION:</strong> Cascading Style Sheets or CSS is the language that makes HTML websites look pretty. Learn how concepts like cascade, specificity, inheritance, and the box model influence the appearance of a webpage
+      </span>
+
+      <br>
+  
+      <h1>CSS Positioning</h1>
+  <video style="width: 900px;"controls>
+    <source src="Learn CSS position in 5 minutes 🎯.mp4" type="video/mp4">
+</video>
+    <span class="tutoxt2">
+  <p><strong>Video Source:</strong> https://youtu.be/Pp7UXS3P6jY?si=4IStupdg1Zn8YeVi<br>
+    <br>
+    <strong>DESCRIPTION:</strong> Chances are you have heard of relative and absolute position in CSS, but did you know there are still three other positions?<br>
+    In this video I will be covering all five CSS positions (static, relative, absolute, fixed, and sticky) by showing you examples of each position<br>
+    and comparing them with each other. This video may be short, but I cover everything about each CSS position in this video,<br>
+    so you can learn everything you need to know about CSS position. By the end of this video you will have a deep understanding<br>
+    of the interactions between the different CSS positions, so you can effectively use them in your next project.
+  </p>
+  
+  <h1>CSS Backgrounds</h1>
+    <video style="width: 900px;"controls>
+      <source src="CSS BACKROUNDS.mp4" type="video/mp4">
+  </video>
+  <span class="tutoxt3">
+    <p><strong>Video Source:</strong> https://youtu.be/dr1y4m7iEoU?si=Y28Yroe15NnIhuGM<br> </p>
+    <strong>DESCRIPTION:</strong> In this lesson we take a look at the CSS Background property in detail, with examples for each keyword.<br>
+
+    The shorthand CSS Background property order:<br> 
+    background-image<br>
+    background-position / background-size<br> 
+    background-repeat <br>
+    background-attachment <br>
+    background-origin<br>
+    background-clip <br>
+    background-color<br>
+
+      </span>
+    </span>
+    </div>
+
+    <div class="cssexer" id="exer">
+      <span class="tutoxt4"> 
+        <h2>CSS BASIC EXERCISES</h2>
+        <h4>EXERCISE:</h4>
+        <p>Objective: Apply Basic styling to an HTML document</p>
+  
+        <h4>Explanation:</h4>
+        <p>CSS (Cascading Style Sheets ) may be added to HTML in three different ways. To style a single HTML element on the page, <br> use Inline CSS in a style attribute.
+          By adding CSS to the head section of our HTML document, we can embed an internal stylesheet.<br>
+         We can also connect to an external stylesheet that separates our CSS from our HTML.<br></p>
+          
+           <p>To complete this exercise, follow these steps:<br>
+  
+          <strong>1.</strong> Create an HTML file with a sample structure.<br>
+           <strong>2.</strong> Link a CSS file to the HTML document. <br>
+           <strong>3.</strong> Apply basic styling such as setting the background color, font size, and text color.<br>
+          
+          </p>
+  
+          <h3>HTML CODE:</h3>
+          <p>
+            <span class="">&lt;!DOCTYPE html&gt;</span> <br>
+            <span class="">&lt;html lang="en"&gt;</span> <br>
+              <span class="">&lt;head&gt;</span> <br>
+              <span class="">&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;</span> <br>
+              <span class="">&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span> <br>
+              <span class="">&nbsp;&nbsp;&lt;link rel="stylesheet" href="styles.css"&gt;</span><br>
+              <span class="">&nbsp;&nbsp;&lt;title&gt;Exercise 1&lt;/title&gt;</span><br>
+              <span class="">&lt;/head&gt;</span><br>
+                <span class="">&lt;body&gt;</span><br>
+                  <span class="">&nbsp;&nbsp;&lt;h1&gt;Hello, CSS!&lt;/h1&gt;</span><br>
+                  <span class="">&nbsp;&nbsp;&lt;p&gt;This is a sample paragraph.&lt;/p&gt;</span><br>
+                  <span class="">&lt;/body&gt;</span><br>
+                  <span class="">&lt;/html&gt;</span> <br>
+
+                  <h3>CSS CODE (styles.css): </h3>
+                  <p>
+                      <span class="">body {</span> <br>
+                        <span class="">&nbsp;&nbsp;background-color: #f0f0f0;</span><br>
+                          <span class="">&nbsp;&nbsp;font-size: 16px;</span> <br>
+                          <span class="">&nbsp;&nbsp;color: #333;</span><br>
+                          
+                      } <br>
+
+                        
+                          <span class="">h1 {</span><br>
+                            <span class="">&nbsp;&nbsp;color: #0066cc;</span><br>
+                          } 
+                  </p>
+          </p>
+  
+          <h4>HTML CODE EXPLANATION:</h4>
+          <ul><li>The HTML document starts with the <code>&lt;!DOCTYPE html&gt;</code> 
+          declaration, specifying the document type and version.</li><li>The <code>&lt;html&gt;</code> 
+          element defines the root of the HTML document, with the <code>lang="en"</code> attribute indicating that 
+          the language is English.</li><li>In the <code>&lt;head&gt;</code> section, metadata like character encoding 
+          and viewport settings are specified.</li><li>The <code>&lt;link&gt;</code> tag includes an external stylesheet 
+          named "styles.css" to apply CSS styles to the HTML document.</li><li>The <code>&lt;title&gt;</code> 
+          element sets the title of the webpage displayed in the browser tab.</li><li>Inside the <code>&lt;
+          body&gt;</code> element, there's an <code>&lt;h1&gt;</code> heading with the text "Hello, CSS!" and a 
+          <code>&lt;p&gt;</code> paragraph with the text <br>"This is a sample paragraph."</li></ul>
+          
+          <h4>CSS CODE EXPLANATION:</h4>
+          <ul><li>The CSS code targets the <code>&lt;body&gt;</code> element and sets its background color to a light gray shade 
+          <code>#f0f0f0</code>.</li><li>It also specifies a default font size of <code>16px</code> and a text color of <code>#333</code> 
+          (dark gray) for all elements within the <code>&lt;body&gt;</code>.</li><li>The CSS rule targeting the <code>&lt;h1&gt;</code> 
+          element changes its text color to a shade of blue <code>#0066cc</code>.</li></ul>
+
+  
+             
+            <br> <a href="cssexercise.html" class="btn">START QUIZ</a>
+  
+            
+          </ul>
+      </span>
+    </div>
+      </span>
+
+  
+    
+    
+
+  <div class="footer">
+    <ul class="social_icon">
+     <li><a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a></li>
+     <li><a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+     <li><a href="https://www.youtube.com/"><ion-icon name="logo-youtube"></ion-icon></a></li>
+     <li><a href="https://www.google.com/"><ion-icon name="logo-google"></ion-icon></a></li>
+    </ul>
+    <ul class="menu">
+     <li><a href="index.html">Home</a></li>
+     <li><a href="aboutus2.html">About</a></li>
+     <li><a href="contactus.html">Contact</a></li>
+    </ul>
+    <p>©2024 WebWise | All Rights Reserved</p>
+  </div>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</div>
+</html>
+

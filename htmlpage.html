@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> HTML PAGE</title>
+    <link rel="stylesheet" href="htmlpage.css" />
+  </head>
+
+  <div class="header">
+    <nav class="navbar">
+      <h2 class="logo"><a href="index.html">WebWise</a><img src= "logo.png"></h2>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" id="hamburger-btn">
+        <svg xmlns height="24" viewBox="0 0 24 24" width="24">
+          <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </label>
+      
+      <ul class="links">
+        <li><a href="aboutus2.html">ABOUT US</a></li>
+        <li><a href="htmlpage.html">HTML</a></li>
+        <li><a href="csspage.html">CSS</a></li>
+        <li><a href="javapage.html">JAVA SCRIPT</a></li>
+      </ul> 
+      
+      <div class="buttons">
+        <a href="login.html" class="login">LOGIN</a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="sidenav">
+    <a href="#intro">HTML Introduction</a>
+    <a href="#class">HTML Class Attributes</a>
+    <a href="#tuto">HTML Tutorial</a>
+    <a href="#exer">Basic Exercise</a>
+    
+  </div>
+
+  <div class="body">
+  <div class="htmlintro" id="intro">
+    <span class="introtxt">
+      <h2>HTML INTRODUCTION</h2>
+  <p>HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed <br>
+     in a web browser.  It defines the content and structure of web content. It is often assisted by technologies such <br>
+     as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+     <h4>HTML has a lot of use cases, namely:</h4>
+     <strong>Web development</strong>- Developers use HTML code to design how a browser displays web page elements, <br>  
+      such as text, hyperlinks, and media files. <br>
+      <strong>Internet navigation</strong>- Users can easily navigate and insert links between related pages and websites<br>
+      as HTML is heavily used to embed hyperlinks. <br>
+      <strong>Web documentation</strong>- HTML makes it possible to organize and format documents, similarly to Microsoft Word.</p>
+    </span>
+    
+    <span class="introtxt2">
+    <h2>What is HTML?</h2>
+    <p>•HTML stands for Hyper Text Markup Language<br>
+      •HTML is the standard markup language for creating Web pages<br>
+      •HTML describes the structure of a Web page<br>
+      •HTML consists of a series of elements<br>
+      •HTML elements tell the browser how to display the content<br>
+      •HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</p>
+    </span>
+    <span class="introtxt3">
+    <h2>How Does HTML Work</h2>
+    <img style src="html-historical-milestones.png" width="553" height="741">
+    <p>The average website includes several different HTML pages. For instance, a home page, an about page, <br>
+      and a contact page would all have separate HTML files.
+      <br>HTML documents are files that end with a .html or .htm extension. A web browser reads the HTML file <br>
+      and renders its content so that internet users 
+      can view it.
+      <br>All HTML pages have a series of HTML elements, consisting of a set of tags and attributes.<br>
+      HTML elements are the building blocks of a web page. A tag tells the web browser where an element <br>
+      begins and ends, whereas an attribute describes the characteristics of an element. </p>
+      
+      <h4>The three main parts of an element are:</h4>
+      <strong>Opening Tag</strong>- used to state where an element starts to take effect. The tag is wrapped with opening <br> and closing angle brackets. For example, use the start tag "<code data-enlighter-language="generic" class="EnlighterJSRAW">&lt;p&gt;</code>" to create a paragraph.&nbsp;
+      <br><strong>Content</strong>-This is the output that other users see.
+      <br><strong>Closing Tag</strong>- The same as the opening tag, but with a forward slash before the element name. <br> For example, "<code data-enlighter-language="generic" class="boxdescrip">&lt;/p&gt;</code>" to end a paragraph.&nbsp;
+      
+      <h4>The combination of these three parts will create an HTML element:</h4>
+      <pre class="boxtuto" data-enlighter-language="generic">&lt;p&gt;This is how you add a paragraph in HTML.&lt;/p&gt;</pre>
+      Another critical part of an HTML element is its attribute, which has two sections – a name and attribute value. <br>The name identifies the additional information that a user wants to add, while the attribute value gives further specifications. <br>
+      
+      <h4>For example, a style element adding the color purple and the font-family verdana will look like this: </h4>
+      <pre class="boxtuto2" data-enlighter-language="generic">&lt;p style="color:purple;font-family:verdana"&gt;This is how you add a paragraph in HTML.&lt;/p&gt;</pre>
+       <br>
+      <h2>How Do HTML, CSS, and JavaScript Work Together?</h2>
+      <p>As we’ve already discussed, HTML, CSS, and JavaScript build on one another — from the simplest website<br>
+       structures to the most advanced interactive features. Like we mentioned earlier, HTML creates and structures<br>
+      the website’s content, CSS adds style and formatting to these structures, and then JavaScript turns those stylized<br>
+      components into something that a user can interact with.</p>
+
+      <p>Say you want to build a website where users can fill out a form for a contest. HTML will allow you to designate<br>
+      the difference between the text that announces the contest and the text that asks questions within the form<br>
+      such as a participant’s name, age, address, and so on. CSS will allow you to dress all this text up, giving it<br>
+      formatting, color, and style while helping you build the boxes where users will input their answers.<br>
+      JavaScript will then enable you to program a little box that pops up and says “Thanks for entering!”<br>
+      when everything has been filled out and submitted. It can even insert the first name that the person submitted<br>
+      in the form for a more personalized message.</p>
+      <img style src="work.png" width="800" height="400">
+     
+
+
+        
+  </p>
+    </span>
+  </div>
+
+  <div class="htmlclass" id="class">
+    <h2>HTML CLASS ATTRIBUTES</h2>
+    <p>The class attribute specifies one or more classnames for an element. The class attribute is mostly used to point to a class <br>
+      in a style sheet. However, it can also be used by a JavaScript (via the HTML DOM) to make changes to HTML elements with a specified class.</p>
+
+    <h2>USING THE CLASS ATTRIBUTES</h2>
+    <p>The <code class="webwise-span">class</code> attribute is often used to point 
+      to a class name in a style sheet. It can also be used by a JavaScript to access and 
+      manipulate elements with the specific class name.
+      <p>In the following example we have three <code class="webwise-span">&lt;div&gt;</code> elements 
+        with a <code class="webwise-span">class</code> attribute with the value of 
+        "city". All of the three <code class="webwise-span">&lt;div&gt;</code> 
+        elements will be styled equally according to the <code class="webwise-span">.city</code> 
+        style definition in the head section:</p>
+    <h4>EXAMPLE:</h4>
+    <img src="EXAMPLE1.jpg"width="553" height="741">
+
+    <h2>CLASS ATTRIBUTES WITH SPAN</h2>
+    <p>In the following example we have two <code class="webwise-span">&lt;span&gt;</code> elements 
+      with a <code class="webwise-span">class</code> attribute with the value of 
+      "note". Both <code class="webwise-span">&lt;span&gt;</code> 
+      elements will be styled equally according to the <code class="webwise-span">.note</code> 
+      style definition in the head section:</p>
+      <h4>EXAMPLE:</h4>
+    <img src="EXAMPLE2.jpg"width="553" height="741">
+
+    <h2>THE SYNTAX FOR CLASS</h2>
+    <p>To create a class; write a period (.) character, followed by a class name. Then, define the CSS properties within curly braces { }:</p>
+    <h4>EXAMPLE:</h4> 
+    <p>Create a class named "city":</p>
+    <img src="EXAMPLE3.jpg"width="553" height="741">
+
+    <h2>NESTED HTML ELEMENTS</h2>
+    HTML elements can be nested (this means that elements can contain other elements). <br>
+    All HTML documents consist of nested HTML elements. <br>
+    The following example contains four HTML elements (<code class="w3-codespan">&lt;html&gt;</code>, <code class="w3-codespan">&lt;body&gt;</code>, <code class="webwise-span">&lt;h1&gt;</code> 
+      and <code class="webwise-span2">&lt;p&gt;</code>)
+      
+      <h4>"HTML EXPLAINED"</h4>
+      <p>The <code class="webwise-span3">&lt;html&gt;</code> element is the root element 
+        and it defines the whole HTML document.</p>
+      <p>It has a start tag <code class="webwise-span4">&lt;html&gt;</code> and an end tag <code class="w3-codespan">&lt;/html&gt;</code>.</p>
+      <p>Then, inside the <code class="webwise-span4">&lt;html&gt;</code> element there is 
+        a <code class="webwise-span5">&lt;body&gt;</code> 
+        element</p>
+
+        <h4>"BODY EXPLAINED"</h4>
+        <p>The <code class="webwise-span6">&lt;body&gt;</code> element defines the 
+          document's body.</p>
+          <p>It has a start tag <code class="webwise-span7">&lt;body&gt;</code> and an end tag <code class="w3-codespan">&lt;/body&gt;</code>.<p>
+          <p>Then, inside the <code class="webwise-span8">&lt;body&gt;</code> element there 
+            are two other elements:
+            <code class="webwise-span9">&lt;h1&gt;</code> and <code class="webwise-span10">
+            &lt;p&gt;</code></p>
+
+            <h4>"H1 AND P EXPLAINED"</h4>
+            <p>The <code class="webwise-span11">&lt;h1&gt;</code> element defines a heading.</p>
+            <p>It has a start tag <code class="webwise-span12">&lt;h1&gt;</code> and an end tag <code class="w3-codespan">&lt;/h1&gt;</code></p>
+            <p>The <code class="w3-codespan">&lt;p&gt;</code> element defines a paragraph.</p>
+            <p>It has a start tag <code class="webwise-span13">&lt;p&gt;</code> and an end tag <code class="w3-codespan">&lt;/p&gt;</code></p>
+
+     
+
+    </p>
+    
+  </div>
+
+  
+
+  <div class="htmltuto" id="tuto">
+    <h1>HTML TUTORIALS</h1>
+    <video style="width: 900px;"controls>
+      <source src="Learn HTML forms in 8 minutes 📝 (online-video-cutter.com).mp4" type="video/mp4">
+      
+  </video>
+  <span class="tutoxt">
+    <p>	<strong>Video Source:</strong> https://youtu.be/2O8pkybH6po?si=dpudtId9n_gE3CP_ <br>
+      <br>
+    <strong>DESCRIPTION:</strong> In this step-by-step tutorial, learn how to create a simple web page using HTML. You'll learn the basics of HTML, from how to structure an HTML document to how to use some of the most common HTML elements. You will see how to create headers, paragraphs,<br>
+    bold and italic text, tables, sections, and forms. You will also learn some tips and best practices for writing clean and semantic HTML code.<br>
+     By the end of this video, you will be able to create your own simple web page with HTML.
+      </p>
+    </span>
+
+    <br>
+  
+      
+
+  <br>
+  
+  <h2>INTRODUCTION TO CLASSES AND IDs IN HTML</h2>
+    <video style="width: 900px;"controls>
+      <source src="class tutorial (online-video-cutter.com).mp4" type="video/mp4">
+  </video>
+  <span class="tutoxt3">
+    <p>	<strong>Video Source:</strong> https://youtu.be/wXUhTZpF_HQ?si=L7R56y2vs_AS5bmk<br>
+    </p>
+      <strong>DESCRIPTION:</strong> 
+      Introduction to Classes and IDs in HTML | Learn HTML and CSS | HTML tutorial. Today you will learn about HTML Classes and IDs, which are used to target a specific HTML element, in order to style it using CSS.
+  
+      </span>
+
+      
+
+      <h2>HTML IMAGE TAG TUTORIAL</h2>
+    <video style="width: 900px;"controls>
+      <source src="HTML img tag __ HTML Tutorial (1).mp4" type="video/mp4">
+  </video>
+  <span class="tutoxt4">
+    <p>	<strong>Video Source:</strong> https://youtu.be/SFY508Sc4E4?si=NbRwtydGhoYGnlXm<br>
+      <br>
+      <strong>DESCRIPTION:</strong> This image tag has two attributes – an src attribute, the image path, and an alt attribute,
+        the descriptive text.<br> However, it does not have content nor an end tag.
+      <pre class="boxtuto3" data-enlighter-language="generic">&lt;img src="/" alt="Image"&gt;</pre>
+     
+      </span>
+    </span>
+    </div>
+
+    
+
+  <div class="htmlexer" id="exer">
+    <span class="tutoxt3">
+      <h2>HTML BASIC EXERCISES</h2>
+      <h4>EXERCISE:</h4>
+      <p>Create a basic HTML webpage that displays your favorite quote</p>
+
+      <h4>Explanation:</h4>
+      <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages. It consists of elements<br>
+         which are represented by tags.<br></p>
+        
+         <p>To complete this exercise, follow these steps:<br>
+
+        <strong>1.</strong> Open a text editor like Notepad or any code editor of your choice.<br>
+         <strong>2.</strong> Type the following HTML code: <br>
+         <strong>3.</strong> Save the file with a ".html" extension. <br>
+         <strong>4.</strong> Open the HTML file in a web browser to view the webpage. <br>
+        </p>
+
+        <h3>HTML CODE:</h3>
+        <p>
+          <div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-html"><span class="hljs-meta">&lt;!DOCTYPE <br>
+          <span class="hljs-keyword">html</span>&gt;</span><br>
+          <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span><br>
+          <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><br>
+          <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span><br>
+          <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span><br>
+          <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>My First Webpage<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span><br>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span><br>
+          <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br>
+          <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Welcome to My Website<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span><br>
+          <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>This is a basic HTML exercise. You're learning how to create webpages!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><br>
+          <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=
+          <span class="hljs-string">"https://via.placeholder.com/300"</span> <span class="hljs-attr">alt</span>=
+          <span class="hljs-string">"Placeholder Image"</span>&gt;</span><br>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><br>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span><br>
+            </code></div>
+        </p>
+
+        <h4>EXPLANATION:</h4>
+        <ul>
+          <li><code>&lt;!DOCTYPE html&gt;</code>: Declares the document type and version of HTML being used.</li><br>
+          <li><code>&lt;html lang="en"&gt;</code>: Defines the beginning of the HTML document, specifying the language as<br>
+          English.</li><br>
+          <li><code>&lt;head&gt;</code>: Contains meta-information about the document, such as character set, viewport<br>
+           settings, and the title of the page.</li><br>
+          <li><code>&lt;meta charset="UTF-8"&gt;</code>: Specifies the character encoding of the document as UTF-8.</li><br>
+          <li><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>: Sets the viewport<br>
+           width to the device width and initial zoom level to 100%.</li><br>
+          <li><code>&lt;title&gt;My First Webpage&lt;/title&gt;</code>: Sets the title of the webpage, which appears<br>
+           in the browser tab.</li><br>
+          <li><code>&lt;body&gt;</code>: Contains the content of the webpage that will be visible to users.</li><br>
+          <li><code>&lt;h1&gt;Welcome to My Website&lt;/h1&gt;</code>: Defines the main heading of the webpage.</li><br>
+          <li><code>&lt;p&gt;This is a basic HTML exercise. You're learning how to create webpages!&lt;/p&gt;</code>:<br>
+            Creates a paragraph of text.</li><br>
+          <li><code>&lt;img src="https://via.placeholder.com/300" alt="Placeholder Image"&gt;</code>: Inserts an image<br>
+           into the webpage. The <code>src</code> attribute specifies the URL of the image, and the<br>
+           <code>alt</code> attribute provides alternative text for accessibility purposes in case the image cannot<br>
+            be displayed.</li>
+
+           
+            <br> <a href="htmlexercise.html" class="btn">START QUIZ</a>
+
+          
+        </ul>
+    </span>
+  </div>
+
+  <div class="footer">
+    <ul class="social_icon">
+     <li><a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a></li>
+     <li><a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+     <li><a href="https://www.youtube.com/"><ion-icon name="logo-youtube"></ion-icon></a></li>
+     <li><a href="https://www.google.com/"><ion-icon name="logo-google"></ion-icon></a></li>
+    </ul>
+    <ul class="menu">
+     <li><a href="index.html">Home</a></li>
+     <li><a href="aboutus2.html">About</a></li>
+     <li><a href="contactus.html">Contact</a></li>
+    </ul>
+    <p>©2024 WebWise | All Rights Reserved</p>
+  </div>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</div>
+</html>
+
